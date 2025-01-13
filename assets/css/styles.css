@@ -1,0 +1,255 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: 'Mongolian Baiti';
+    color: #707070;
+    position: relative;
+}
+
+/* SECTION HOME */
+
+section#home .col {
+    padding: 0;
+}
+
+section#home .side {
+    background-color: #343a40;
+    color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+section#home .side img#profile {
+    border-radius: 50%;
+    width: 13em;
+    height: 13em;
+    margin-bottom: 1em;
+}
+
+section#home .side h4 {
+    margin-bottom: 2em;
+}
+
+section#home .side h5 {
+    margin-bottom: 1.5em;
+}
+
+div.medsos .fab {
+    color: white;
+    font-size: 35px;
+    margin: 0 .5rem 1rem .5rem;
+}
+
+div.medsos #ig:hover {
+    color: #ee2eb4;
+    text-shadow: 0 0 5px grey;
+}
+
+div.medsos #tw:hover {
+    color: #4684F1;
+    text-shadow: 0 0 5px grey;
+}
+
+div.medsos #st:hover {
+    color: #000B6A;
+    text-shadow: 0 0 9px grey;
+}
+
+section#home .btn {
+    color: #343a40;
+    border-radius: 0;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-bottom: 0.8em;
+}
+
+section#home .btn:hover {
+    color: white;
+    background-color: #4684F1;
+    border-radius: 0;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+section#home div.container.main {
+    float: left;
+    margin-top: 22em;
+    margin-left: 3em;
+    color: white;
+}
+
+/* SECTION ABOUT */
+
+section#about {
+    padding: 0 0 8em 0;
+}
+
+section#about div.about {
+    background-color: #BBDDFF;
+    color: #707070;
+}
+
+section#about div.about .container {
+    padding: 5em 19em 7em 5em;
+}
+
+section#about h1,
+section#about .lead {
+    color: #4684F1;
+}
+
+section#about .lead {
+    padding-bottom: 2em;
+}
+
+section#about .lead.text-about {
+    color: #707070;
+}
+
+/* SECTION EXPERIENCE */
+
+section#experience .experience {
+    padding: 5em 0 3em 5em;
+}
+
+section#experience h1,
+section#experience .lead {
+    color: #4684F1;
+}
+
+section#experience .lead {
+    padding-bottom: .5em;
+}
+
+/* SECTION SKILL */
+
+section#skill .skill {
+    padding: 5em 0 5em 5em;
+}
+
+section#skill h1,
+section#skill .lead {
+    color: #4684F1;
+}
+
+section#skill .lead {
+    padding-bottom: 2em;
+}
+
+section#skill .skill .row .col ul li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+section#skill .skill .row .col ul li .progress{
+    margin-bottom: 1em;
+}
+
+section#skill .skill .row .col .row .progress {
+    height: 0.2rem;
+    width: 50%;
+    margin-bottom: 1.4em;
+}
+
+section#skill .skill .row .col .progress-skill {
+    margin-bottom: 2em;
+}
+
+/* SECTION AWARD */
+
+section#award .award {
+    padding: 5em 0 5em 5em;
+}
+
+section#award h1,
+section#award .lead {
+    color: #4684F1;
+}
+
+section#award .lead {
+    padding-bottom: 2em;
+}
+
+section#award .row .col ul li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+/* FOOTER */
+
+footer.page-footer {
+    background-color: #707070;
+    color: white;
+    padding: 0.5em;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    section#about div.about .container {
+        padding: 5em 19em 7em 5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* Make default navbar links display block at choosen breakpoint and adjust styles to fit... */
+@media (max-width: 62em) {
+	.navbar-nav {
+		padding-top: .425rem;
+		padding-left: 0.75rem;
+	}
+	.navbar-nav .nav-item {
+		float: none;
+	}
+	.navbar-brand {
+		float: right;
+	}
+	.navbar-brand,
+	.navbar-nav .nav-item {
+		display: block;
+	}
+	.navbar-nav .nav-item + .nav-item {
+		margin-left: 0;
+	}
+	.dropdown-menu {
+		position: relative;
+		float: none;
+	}
+}
+
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
